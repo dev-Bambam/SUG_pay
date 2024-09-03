@@ -32,32 +32,32 @@
               class="hidden lg:flex lg:items-center lg:justify-center lg:space-x-10"
             >
               <a
-                href="#"
+                href="#home"
                 title=""
                 class="text-base text-white transition-all duration-200 hover:text-opacity-80 hover:bg-gray-500 p-2 rounded-md"
               >
-                Features
+                Home
               </a>
               <a
-                href="#"
+                href="#about"
                 title=""
                 class="text-base text-white transition-all duration-200 hover:text-opacity-80 hover:bg-gray-500 p-2 rounded-md"
               >
-                Solutions
+                About Us
               </a>
               <a
-                href="#"
+                href="#payment"
                 title=""
                 class="text-base text-white transition-all duration-200 hover:text-opacity-80 hover:bg-gray-500 p-2 rounded-md"
               >
-                Resources
+                Payment
               </a>
               <a
-                href="#"
+                href="#testimonial"
                 title=""
                 class="text-base text-white transition-all duration-200 hover:text-opacity-80 hover:bg-gray-500 p-2 rounded-md"
               >
-                Pricing
+                Testimonial
               </a>
             </div>
 
@@ -65,7 +65,7 @@
               class="lg:flex lg:items-center lg:justify-end lg:space-x-6 sm:ml-auto"
             >
               <a
-                href="#"
+                href="#payment"
                 title=""
                 class="inline-flex items-center justify-center px-3 sm:px-5 py-2.5 text-sm sm:text-base font-semibold transition-all duration-200 text-white bg-white/20 hover:bg-white/40 focus:bg-white/40 rounded-lg"
                 role="button"
@@ -118,31 +118,31 @@
         <div id="mobile-menu" class="hidden lg:hidden z-50">
           <div class="px-4 pt-4 pb-6 space-y-4 bg-gray-950 text-center">
             <a
-              href="#"
+              href="#home"
               class="block text-base text-white transition-all duration-200 hover:text-opacity-80 transform hover:scale-105 hover:bg-gray-900 p-2 rounded-md"
             >
-              Features
+              Home
             </a>
             <a
-              href="#"
+              href="#about"
               class="block text-base text-white transition-all duration-200 hover:text-opacity-80 transform hover:scale-105 hover:bg-gray-900 p-2 rounded-md"
             >
-              Solutions
+              About Us 
             </a>
             <a
-              href="#"
+              href="#payment"
               class="block text-base text-white transition-all duration-200 hover:text-opacity-80 transform hover:scale-105 hover:bg-gray-900 p-2 rounded-md"
             >
-              Resources
+              Payment
             </a>
             <a
-              href="#"
+              href="#testimonial"
               class="block text-base text-white transition-all duration-200 hover:text-opacity-80 transform hover:scale-105 hover:bg-gray-900 p-2 rounded-md"
             >
-              Pricing
+              Testimonial
             </a>
             <a
-              href="#"
+              href="#payment"
               class="block text-base text-white transition-all duration-200 hover:text-opacity-80 transform hover:scale-105 hover:bg-gray-900 p-2 rounded-md"
             >
               Get started
@@ -151,21 +151,8 @@
         </div>
       </header>
 
-      <script>
-        const mobileMenuButton = document.getElementById("mobile-menu-button");
-        const mobileMenu = document.getElementById("mobile-menu");
-        const menuOpenIcon = document.getElementById("menu-open");
-        const menuCloseIcon = document.getElementById("menu-close");
-
-        mobileMenuButton.addEventListener("click", () => {
-          const isMenuOpen = mobileMenu.classList.contains("hidden");
-          mobileMenu.classList.toggle("hidden", !isMenuOpen);
-          menuOpenIcon.classList.toggle("hidden", isMenuOpen);
-          menuCloseIcon.classList.toggle("hidden", !isMenuOpen);
-        });
-      </script>
-
       <section
+        id="home"
         class="relative lg:min-h-[1000px] pt-24 pb-10 sm:pt-32 sm:pb-16 lg:pb-24 z-0"
       >
         <div class="absolute inset-x-0 bottom-0 z-10 hidden lg:flex">
@@ -196,7 +183,7 @@
             </p>
 
             <a
-              href="#"
+              href="#payment"
               title=""
               class="inline-flex items-center px-6 py-4 mt-8 font-semibold text-white transition-all duration-200 bg-blue-600 rounded-lg sm:mt-16 hover:bg-blue-700 focus:bg-blue-700"
               role="button"
@@ -405,7 +392,7 @@
         </div>
       </section>
       <!-- testimonials -->
-      <section class="py-10 bg-gray-100 sm:py-16 lg:py-24">
+      <section class="py-10 bg-gray-100 sm:py-16 lg:py-24" id="testimonial">
         <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div class="max-w-2xl mx-auto text-center">
             <h2
@@ -767,7 +754,7 @@
         </div>
       </section>
       <!-- payment section -->
-      <section class="py-10 bg-gray-900 sm:py-16 lg:py-24">
+      <section class="py-10 bg-gray-900 sm:py-16 lg:py-24" id="payment">
         <div class="max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
           <div
             class="grid grid-cols-1 md:items-stretch md:grid-cols-2 gap-x-12 lg:gap-x-20 gap-y-10"
@@ -891,7 +878,7 @@
                     We ensure that your information is securely handled.
                   </p>
 
-                  <form action="#" method="POST" class="mt-4">
+                  <form action="#" method="" class="mt-4" id="payment-form">
                     <div class="space-y-6">
                       <div>
                         <label
@@ -921,8 +908,8 @@
                         </label>
                         <div class="mt-2.5 relative">
                           <input
-                            type="email"
-                            name="email"
+                            type="matric"
+                            name="matric"
                             id="email"
                             required
                             placeholder="Enter your email address"
@@ -970,6 +957,8 @@
 
                       <div>
                         <button
+                          name="submit"
+                          id="submit"
                           type="submit"
                           class="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-black transition-all duration-200 bg-blue-500 border border-transparent rounded-md focus:outline-none hover:bg-blue-600 focus:bg-blue-600"
                         >
